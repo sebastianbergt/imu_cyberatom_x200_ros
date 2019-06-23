@@ -54,7 +54,7 @@ int main(int argc, char **argv)
 {
   ros::init(argc, argv, "imu_cyberatom_x200_ros");
   ros::NodeHandle n;
-  imu_pub = n.advertise<sensor_msgs::Imu>("imu", 100);
+  imu_pub = n.advertise<sensor_msgs::Imu>("imu", 1);
   
   while (ros::ok())
   {
