@@ -20,7 +20,8 @@ void imuCallback(unsigned char buffer[], int length)
 {
     callback_counter++;
     // buffer can be at maximum CyberAtomUsb::MSG_SIZE
-    cout << "userDefinedCallback callback_counter=" << callback_counter << ", responseId=" << X200DataConverter::decodeResponseID(buffer[0]) << endl;
+    cout << "userDefinedCallback callback_counter=" << callback_counter 
+        << ", responseId=" << X200DataConverter::decodeResponseID(buffer[0]) << endl;
     X200DataConverter conv;
     switch (buffer[0])
     {
