@@ -1,0 +1,3 @@
+add_executable(cyberatom_x200_lib_test CyberAtomUsb_usbInit.cc)
+target_link_libraries(cyberatom_x200_lib_test cyberatom_x200_lib gtest gmock gtest_main)
+set_target_properties(cyberatom_x200_lib_test PROPERTIES FOLDER tests)

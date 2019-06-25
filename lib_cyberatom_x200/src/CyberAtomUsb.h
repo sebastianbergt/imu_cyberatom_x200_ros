@@ -1,7 +1,9 @@
 #include <iostream>
 #include <array>
 #include <vector>
+#ifndef UNDER_TEST
 #include <libusb-1.0/libusb.h>
+#endif
 #include <inttypes.h>
 #include "X200DataConverter.h"
 
